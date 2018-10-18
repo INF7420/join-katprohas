@@ -6,36 +6,40 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katrina Prohaszka</title>
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Fahkwang|Montserrat|Nanum+Gothic" rel="stylesheet">
+  <link rel="stylesheet"  href="styles.css">
 </head>
 
 <body>
-
+<div class="page">
   <!-- HEADER CONTENT -->
   <header>
     <!-- Social Media Images -->
     <ul style="list-style: none;">
       <li><a href="https://www.facebook.com">
-          <img class="socials" src="images/facebook.png" alt="image of the facebook icon to link to facebook" style="float: right; width: 1.5%; height: 1.5%; margin-right: 1%">
+          <img class="socials" src="images/facebook.png" 
+          alt="image of the facebook icon to link to facebook">
         </a></li>
       <li><a href="https://www.instagram.com">
-          <img class="socials" src="images/instagram.png" alt="image of the instagram icon to link to instagram" style="float: right; width: 1.5%; height: 1.5%; margin-right: 1%">
+          <img class="socials" src="images/instagram.png" 
+          alt="image of the instagram icon to link to instagram">
         </a></li>
       <li><a href="https://www.linkedin.com">
-          <img class="socials" src="images/linkedin.png" alt="iamge of the linkedin icon to link to linkedin" style="float: right; width: 1.5%; height: 1.5%; margin-right: 1%">
+          <img class="socials" src="images/linkedin.png" 
+          alt="image of the linkedin icon to link to linkedin">
         </a></li>
     </ul>
 
     <!-- Banner for website with name and degree -->
-    <hgroup style="clear: both;">
-      <h1 style="text-align: center"><u>KATRINA PROHASZKA</u></h1>
-      <h2 style="text-align: center">MLIS in Information Management</h2>
-    </hgroup>
+     <img class="banner" src="images/eportfolio_banner.png" alt="picture of name and degree">
 
-    <nav style="text-align: center; background-color: lightblue; width: 100%">
+    <nav class="main-navigation">
       <!-- Navigation Bar Menu -->
-      <ul style="display:inline-block">
-        <li><a href="index.html">HOME </a></li>
-        <li>REFLECTION</li>
+      <ul>
+        <li><a href="index.html" class="active">HOME </a></li>
+        <li><a href="reflection.html">REFLECTION</a></li>
         <li><a href="artifacts.html">ARTIFACTS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
         <li><a href="imprint.html">IMPRINT</a></li>
@@ -46,25 +50,28 @@
 
   <!-- MAIN CONTENT -->
   <main>
+    <h1>Welcome</h1>
     <!-- Image -->
-    <img style="width: 25%; height: 25%; padding:15px" src="images/book_pic.jpg" alt="picture of gold apple sitting on books">
-
+    <div class="container">
+      <div class="main_img">
+        <img src="images/book_pic.jpg" alt="picture of gold apple sitting on books">
+      </div>
+    </div>
     <!-- Home Page main content -->
-    <h2><a id="welcome">Welcome!</a></h2>
-    <p>Thanks for checking out my portfolio. My name is Katrina Prohaszka, and I'm pursuing the Information Management
+
+    <p class="paragraph">Thanks for checking out my portfolio. My name is Katrina Prohaszka, and I'm pursuing the Information Management
       concentration for my MLIS degree at Wayne State University. If all goes well, I will be graduating in Winter
       2019!</p>
-    <p>Feel free to check out the links above to view the other parts of the portfolio.</p>
+    <p class="paragraph">Feel free to check out the links above to view the other parts of the portfolio.</p>
   </main>
   <!-- END MAIN CONTENT -->
 
   <!-- FOOTER CONTENT -->
-  <footer style="background-color: lightblue; width: 100%;bottom:10px; padding: 1px;margin:15px">
-    <p><a href="#welcome">Back to top</a></p>
+  <footer class="footer">
     <p> &copy; 2018 Katrina Prohaszka</p>
   </footer>
   <!-- END FOOTER CONTENT -->
-
+</div>
 </body>
 
 </html>
