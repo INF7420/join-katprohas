@@ -5,7 +5,7 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Page</title>
-  <link rel="stylesheet" 
+  <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cinzel|Fahkwang|Montserrat|Nanum+Gothic" rel="stylesheet">
   <link rel="stylesheet"  href="styles.css">
@@ -17,15 +17,15 @@
   <!-- Social Media Images -->
   <ul style="list-style: none;">
     <li><a href="https://www.facebook.com">
-        <img class="socials" src="images/facebook.png" 
+        <img class="socials" src="images/facebook.png"
         alt="image of the facebook icon to link to facebook">
       </a></li>
     <li><a href="https://www.instagram.com">
-        <img class="socials" src="images/instagram.png" 
+        <img class="socials" src="images/instagram.png"
         alt="image of the instagram icon to link to instagram">
       </a></li>
     <li><a href="https://www.linkedin.com">
-        <img class="socials" src="images/linkedin.png" 
+        <img class="socials" src="images/linkedin.png"
         alt="iamge of the linkedin icon to link to linkedin">
       </a></li>
   </ul>
@@ -53,23 +53,35 @@
 
   <!-- Contact main content -->
   <h1>Contact Me</h1>
-  <div class="contact">
-      <p>Please fill out the form below if you hav any questions or comments! [not yet working...]</p>
-    <form action="mailto: kprohaszka@katsreadtoo.com" method="post" enctype="text/plain">
-    Name: <br>
-    <input type="text" name="name"> <br>
-    Email: <br>
-    <input type="text" email="email"> <br>
-    Comments: <br>
-    <input type="text" comments="comments"> <br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset"> 
-  </div>
+      <p>Please fill out the form below if you have any questions or comments!</p>
+    <form action="https://formspree.io/gl9739@wayne.edu" method="POST"class="validate">
+      <div>
+        <label for="name">Name:
+          <input type="text" id="name" name="user_name" class="form-input" required>
+        </label>
+      </div>
+      <div>
+        <label for="email">E-mail:
+          <input type="email" id="email" name="_replyto" class="form-input" required>
+        </label>
+      </div>
+      <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message" class="form-input" required></textarea>
+      </div>
+      <div class="button">
+        <button type="submit"> Send your Message</button>
+      </div>
+
+      <input type="hidden" name="_next" value="https://inf7420.github.io/prohaszka-project/thanks.html"/>
+      <input type="hidden" name="_subject" value="Email from class project!"/>
+      <input type="text" name="_gotcha" style="display:none"/>
+
+    </form>
   <address>
     Written by Katrina Prohaszka <br/>
     Visit me at: <br/>
     <a href="http://www.katsreadtoo.com">katsreadtoo.com</a> <br/>
-    Email: gl9739@wayne.edu
   </address>
 
   </main> <!-- END MAIN CONTENT -->
@@ -80,5 +92,7 @@
   </footer>
   <!-- END FOOTER CONTENT -->
   </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
